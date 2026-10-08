@@ -71,6 +71,16 @@ function removeItem(index) {
     localStorage.setItem(localStorageKey, JSON.stringify(values));
 
     showValues();
+
+    // Exibe mensagem de sucesso
+    let successMessage = document.getElementById("success-message");
+
+    successMessage.style.display = "block";
+
+    // Esconde a mensagem depois de 2 segundos
+    setTimeout(() => {
+        successMessage.style.display = "none";
+    }, 3000);
 }
 
 showValues();
