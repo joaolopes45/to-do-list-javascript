@@ -1,27 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lista de Tarefas</title>
-</head>
-<body>
-    <h1>To Do List I AGU </h1>
+  </head>
+  <body>
+    <nav class="navbar">
+    <img id="logo" src="./img/agu sem fundo.png" alt="Logo da AGU">
+    <h1>To Do List I AGU</h1>
+</nav>
     <div class="content">
-        <div class="content--add-item">
-            <input type="text" id="input-new-task" placeholder="Digite uma tarefa">
-            <button onclick="newTask()" id="btn-new-task" title="Clique aqui para adicionar uma nova tarefa">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-                </svg>
-            </button>
-        </div>
-        <div class="content--body">
-            <ul id="to-do-list">
-            </ul>
-        </div>
+      <div class="content--add-item">
+        <input
+          type="text"
+          id="input-new-task"
+          placeholder="Digite uma tarefa"
+        />
+        <button
+          onclick="newTask()"
+          id="btn-new-task"
+          title="Clique aqui para adicionar uma nova tarefa"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-plus"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="content--body">
+        <ul id="to-do-list"></ul>
+      </div>
+      <div id="success-message">Concluído com sucesso!</div>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
